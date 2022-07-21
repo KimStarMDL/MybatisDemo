@@ -16,7 +16,7 @@ public class CityDaoImpl implements CityDao {
 	
 	@Override
 	public CityVo read(String name) {
-		this.sqlSession.selectOne("City.selectCity", name);
+		return this.sqlSession.selectOne("City.selectCity", name);
 	}
 
 	@Override
