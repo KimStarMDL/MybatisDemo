@@ -10,6 +10,7 @@ import com.example.vo.CityVo;
 
 @Repository("cityDao")
 public class CityDaoImpl implements CityDao {
+<<<<<<< HEAD
 
 	@Autowired
 	private SqlSession sqlSession;
@@ -17,6 +18,16 @@ public class CityDaoImpl implements CityDao {
 	@Override
 	public CityVo read(String name) {
 		return this.sqlSession.selectOne("City.selectCity", name);
+=======
+	
+	@Autowired
+	private SqlSession sqlSession;
+
+	@Override
+	public CityVo read(String name) {
+		// TODO Auto-generated method stub
+		return null;
+>>>>>>> refs/remotes/origin/master
 	}
 
 	@Override
